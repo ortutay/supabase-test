@@ -1,1 +1,24 @@
-node_modules
+# Dependencies and build output
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+
+# Local environment credentials
+.env*
+!.env.example
+
+# Local tooling state and logs
+.turbo/
+.vercel/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor and operating system files
+.DS_Store
+.idea/
+.vscode/

@@ -12,12 +12,26 @@
   },
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "tsc --noEmit",
+    "test": "npm run lint"
   },
   "devDependencies": {
-    "supabase": "^2.118.0"
+    "@types/node": "^22.15.3",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "supabase": "^2.118.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.117.2",
+    "next": "^16.3.6",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   }
 }
